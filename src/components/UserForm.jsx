@@ -120,7 +120,7 @@ function UserForm() {
                     checked={formik.values.confirmEmail}
                 />
                 <button type="submit">Submit</button>
-                {formik.touched && formik.errors ? (
+                {formik.touched.firstName && formik.errors ? (
                     <div className={styles.error}>
                         <p>{formik.errors.firstName}</p>
                         <p>{formik.errors.lastName}</p>
